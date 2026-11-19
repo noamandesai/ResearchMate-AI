@@ -1,0 +1,7 @@
+﻿.env
+venv/
+.venv/
+.faiss-test-venv/
+__pycache__/
+*.py[cod]
+.streamlit/secrets.toml
