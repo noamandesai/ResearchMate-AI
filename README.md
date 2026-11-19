@@ -124,25 +124,6 @@ http://localhost:8501
 - The system may not provide an answer when relevant information is absent from the retrieved document context.
 
 ## Troubleshooting
-
-| Issue | Solution |
-|---|---|
-| Missing GROQ_API_KEY | Verify that `.env` exists and contains a valid API key. |
-| Import errors | Activate the virtual environment and reinstall dependencies. |
-| FAISS installation errors | Use a compatible 64-bit Python version (3.10–3.12). |
-| Model/API errors | Check the API key and verify that the configured Groq model is supported. |
-| Application not opening | Confirm that Streamlit is installed and the application is running on port 8501. |
-
-## Security
-
-- API keys are stored locally in `.env`.
-- `.env` is excluded from Git tracking using `.gitignore`.
-- Never publish API keys or other sensitive credentials.
-
-## Author
-
-**Noaman M. Desai**
-
-ResearchMate AI – GenAI Individual Assignment
-
-GitHub: https://github.com/noamandesai/ResearchMate-AI
+- **GROQ_API_KEY is missing**: make sure `.env` exists (not `.env.example`) and restart Streamlit.
+- **Import errors**: confirm the virtual environment is active, then re-run `pip install -r requirements.txt`.
+- **faiss install fails**: use Python 3.10-3.12 (64-bit).
